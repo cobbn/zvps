@@ -27,7 +27,7 @@ async def mirror_status(_, message):
         currentTime = get_readable_time(time() - botStartTime)
         free = get_readable_file_size(disk_usage(config_dict['DOWNLOAD_DIR']).free)
         msg = ''
-        msg += 'No Active Tasks!'
+        msg += '<b>No Active Tasks!\n</b>'
         msg += f"\n<b>CPU</b>: {cpu_percent()}% | <b>FREE</b>: {free}" \
                f"\n<b>RAM</b>: {virtual_memory().percent}% | <b>UPTIME</b>: {currentTime}"
         reply_message = await sendMessage(message, msg)
