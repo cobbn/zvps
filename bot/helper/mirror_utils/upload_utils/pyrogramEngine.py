@@ -240,7 +240,6 @@ class TgUploader:
                                         await self.__send_media_group(subkey, key, msgs)
                     self.__last_msg_in_group = False
                     self.__last_uploaded = 0
-                    await self.__switching_client(f_size)
                     await self.__upload_file(cap_mono, file_)
                     if self.__is_cancelled:
                         return
