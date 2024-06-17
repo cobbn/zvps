@@ -104,7 +104,7 @@ class gdUpload(GoogleDriveHelper):
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': f'Uploaded using Z by {self.listener.message.from_user.id}',
+            'description': f'Uploaded by Reaper',
             'mimeType': mime_type,
         }
         if dest_id is not None:
