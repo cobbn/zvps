@@ -19,6 +19,7 @@ httpx
 lxml
 motor
 mutagen
+pyrofork==2.2.11
 natsort
 pillow
 psutil
